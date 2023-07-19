@@ -20,7 +20,7 @@ int main(void)
 		fib2 = sum;
 
 		if (c == 49)
-			printf("\n")
+			printf("\n");
 		else
 			printf(", ");
 	}
