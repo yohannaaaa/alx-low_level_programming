@@ -11,8 +11,8 @@ int main(void)
 {
 	int c;
 	unsigned long fib1 = 0, fib2 = 1, sum;
-	unsigned long f1_h1, f1_h2, f2_h1, f2_h2;
-	unsigned long h1, h2;
+	unsigned long long f1_h1, f1_h2, f2_h1, f2_h2;
+	unsigned long long h1, h2;
 
 	for (c = 0; c < 92; c++)
 	{
