@@ -38,7 +38,7 @@ int main(void)
 			h2 %= 10000000000;
 		}
 		printf("%lu %lu", h1, h2);
-		if (c != 98)
+		if (c != 97)
 			printf(",");
 
 		f1_h1 = f2_h1;
