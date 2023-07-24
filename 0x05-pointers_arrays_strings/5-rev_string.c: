@@ -1,0 +1,18 @@
+tring.c:9:2: error: ISO C forbids nested functions [-Werror=pedantic]
+    9 |  char rev s[0];
+      |  ^~~~
+5-rev_string.c:9:11: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘s’
+    9 |  char rev s[0];
+      |           ^
+5-rev_string.c:9:12: error: statement with no effect [-Werror=unused-value]
+    9 |  char rev s[0];
+      |           ~^~~
+5-rev_string.c:10:2: error: ISO C90 forbids mixed declarations and code [-Werror=declaration-after-statement]
+   10 |  int c = 0;
+      |  ^~~
+5-rev_string.c:18:3: error: ‘rev’ undeclared (first use in this function)
+   18 |   rev = s[i];
+      |   ^~~
+5-rev_string.c:18:3: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+
