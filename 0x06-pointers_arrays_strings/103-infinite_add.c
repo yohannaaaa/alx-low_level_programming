@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * rev_string - reverse array
- * @n: integer
+ * @n: integer params
  * Return: 0
  */
 
@@ -12,7 +12,7 @@ void rev_string(char *n)
 
 	while (*(n + i) != '\0')
 	{
-		i++
+		i++;
 	}
 	i--;
 	for (j = 0; j < i; j++, i--)
@@ -25,8 +25,8 @@ void rev_string(char *n)
 
 /**
  * infinite_add - adds 2 numbers together
- * @n1: 1st number to add
- * @n2: 2nd number to add
+ * @n1: text reprsentation of 1st number to add
+ * @n2: text representation 2nd number to add
  * @r: pointer to buffer
  * @size_r: size of buffer
  * Return: pointer to calling function
@@ -39,7 +39,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 
 	while (*(n1 + i) != '\0')
 		i++;
-	while (*(n1 + j) != '\0')
+	while (*(n2 + j) != '\0')
 		j++;
 	i--;
 	j--;
@@ -48,6 +48,8 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	while (j >= 0 || i >= 0 || of == 1)
 	{
 		if (i < 0)
+			v1 = 0;
+		else
 			v1 = *(n1 + i) - '0';
 		if (j < 0)
 			v2 = 0;
